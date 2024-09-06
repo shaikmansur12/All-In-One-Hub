@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Temperature Converter</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <h2 class="title">Temperature Converter</h2>
+        <div class="input-container">
+			<label for="celcius">Celcius</label>
+			<input type="number" id="celcius" placeholder="Celcius"
+				oninput="celcius(parseFloat(this.value))" />
+		</div>
+		<div class="input-container">
+			<label for="fahrenheit">Fahrenheit</label>
+			<input type="number" id="fahrenheit" placeholder="Fahrenheit"
+				onchange="fahrenheit(parseFloat(this.value))" />
+		</div>
+		<div class="input-container">
+			<label for="kelvin">Kelvin</label>
+			<input type="number" id="kelvin" placeholder="Kelvin" 
+                onchange="kelvin(parseFloat(this.value))" />
+		</div>
+        <br>
+        <a href="temperaturechart.html">Veiw Chart</a><br><br>
+        <a href="./index.html"> <b><< Home</b> </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

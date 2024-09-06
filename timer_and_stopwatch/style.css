@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: grey;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container {
+    padding: 32px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    background: darkkhaki;
+    box-shadow: 20px 20px 40px orange(0, 0, 0, 0.08), -8px -8px 16px rgba(0, 0, 0, 0.1) inset;
+}
+
+.title {
+    font-size: 32px;
+    text-align: center;
+}
+
+.input-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: lightseagreen;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: blue;
+}

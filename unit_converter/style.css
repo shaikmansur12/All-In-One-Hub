@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Geologica', sans-serif;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: lightcyan;
+	padding: 20px;
+}
+
+.container {
+	padding: 32px;
+	border-radius: 60px;
+	max-width: 400px;
+	width: 100%;
+	background: goldenrod;
+	box-shadow: 20px 20px 40px white(0, 0, 0, 0.08), -8px -8px 16px rgba(0, 0, 0, 0.1) inset;
+}
+
+.title {
+	text-align: center;
+}
+
+.input-container {
+	margin-top: 12px;
+	display: flex;
+	flex-direction: column;
+}
+
+.input-container a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	padding: 12px 24px;
+	border-radius: 4px;
+	background: antiquewhite;
+	border: 1px solid black;
+	transition: transform 0.3s ease;
+}
+
+.input-container a:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-container a:active {
+	transform: translateY(0);
+	box-shadow: none;
+}

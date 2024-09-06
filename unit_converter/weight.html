@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weight Converter</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<h2 class="title">Weight Converter</h2>
+		<div class="input-container">
+			<label for="milligram">Milligram</label>
+			<input type="number" id="milligram" placeholder="Milligram"
+				oninput="milligram(parseFloat(this.value))" />
+		</div>
+		<div class="input-container">
+			<label for="centigram">Centigram</label>
+			<input type="number" id="centigram" placeholder="Centigram"
+				onchange="centigram(parseFloat(this.value))" />
+		</div>
+		<div class="input-container">
+			<label for="gram">Gram</label>
+			<input type="number" id="gram" placeholder="gram" onchange="gram(parseFloat(this.value))" />
+		</div>
+		<div class="input-container">
+			<label for="kilogram">Kilogram</label>
+			<input type="number" id="kilogram" placeholder="Kilogram" onchange="kilogram(parseFloat(this.value))" />
+		</div>
+        <br>
+        <a href="weightchart.html">Veiw Chart</a><br><br>
+        <a href="./index.html"> <b><< Home</b> </a>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All_In_One_Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>All In One Hub</h1>
+  
+    <div id="app">
+      <div class="container">
+          <div class="app-list">
+              <div>
+                <a href="../drawing_application/index.html" class="sub-web">
+                  <img src="drawing_p.jpeg" alt="Drawing Application" class="circle-image" width="100">
+                  <h3>Drawing Application</h3>
+                </a>
+              </div>
+              <div>
+                <a href="../music/index.html" class="sub-web">
+                  <img src="music_p.jpeg" alt="Music" class="circle-image" width="200">
+                  <h3>Music</h3>
+                </a>
+              </div>
+              <div>
+                <a href="../timer_and_stopwatch/index.html" class="sub-web">
+                  <img src="Timer and stopwatch_p.jpeg" alt="Timer and Stopwatch" class="circle-image" width="200">
+                  <h3>Timer and Stopwatch</h3>
+                </a>
+              </div>
+              <div>
+                <a href="../unit_converter/index.html" class="sub-web">
+                  <img src="Unit Converter_p.jpeg" alt="Unit Converter" class="circle-image" width="100">
+                  <h3>Unit Converter</h3>
+                </a>
+              </div>
+          </div>
+          <div class="app-list">
+              <div>
+                <a href="../scientific_calculator/index.html" class="sub-web">
+                  <img src="scientific calculator_p.png" alt="Scientific Calculator" class="circle-image" width="200">
+                  <h3>Scientific Calculator</h3>
+                </a>
+              </div>
+              <div>
+                <a href="../file_uploader/index.html" class="sub-web">
+                  <img src="file uploader_p.jpeg" alt="File Uploader" class="circle-image" width="100">
+                  <h3>File Uploader</h3>
+                </a>
+              </div>
+              <div>
+                <a href="../Hand_Battle/index.html" class="sub-web">
+                  <img src="Hand Battle_p.jpeg" alt="Hand Battle" class="circle-image" width="100">
+                  <h3>Hand Battle</h3>
+                </a>
+              </div>
+              <div>
+                <a href="../News Wave/index.html" class="sub-web">
+                  <img src="News Wave_p.jpeg" alt="News Wave" class="circle-image" width="100">
+                  <h3>News Wave</h3>
+                </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." id="searchInput">
+    <button onclick="search()"><span>&#128269;</span></button>
+  </div>  
+
+  <script>
+    function search() {
+      var input = document.getElementById("searchInput").value.toLowerCase();
+      var subWebs = document.getElementsByClassName("sub-web");
+      for (var i = 0; i < subWebs.length; i++) {
+        var subWeb = subWebs[i];
+        var subWebText = subWeb.innerText.toLowerCase();
+        if (subWebText.includes(input)) {
+          subWeb.style.display = "flex";
+        } else {
+          subWeb.style.display = "none";
+        }
+      }
+    }      
+  </script>
+</body>
+</html>
