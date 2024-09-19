@@ -1,1 +1,1 @@
-# All-In-One-Hub - LInk https://all-in-one-hub.vercel.app/
+# All-In-One-Hub - Link https://all-in-one-hub.vercel.app/
